@@ -76,5 +76,11 @@ jekyll-mentions:
 # Server Config options
 livereload: true     # You no longer need to include --livereload
 
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+
+
+
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
