@@ -13,6 +13,8 @@ bundle exec jekyll serve --livereload optional
 
 Bundler 1.16.2
 
-Gem 2.7.6
+Gem 2.6.14.1
 
-Jekyll 3.2.1
+Jekyll 3.8.1
+
+Ruby 2.4.4p296 (2018-03-28 revision 63013) [x64-mingw32]
