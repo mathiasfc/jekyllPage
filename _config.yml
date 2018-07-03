@@ -1,5 +1,5 @@
 # Site
-title:              Moon
+title:              Moos
 bio:                'Minimal, one column jekyll theme.'
 description:        "Moon is a minimal, one column jekyll theme for your blog."
 reading_time:       true
@@ -68,9 +68,13 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-livereload
 
 jekyll-mentions:
     base_url: https://github.com
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
