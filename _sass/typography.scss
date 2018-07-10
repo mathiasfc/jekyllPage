@@ -33,7 +33,7 @@
 
 // headings
 h3.title a {
-    color: $color_shark;
+    color: $white;
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ h3.title a {
             color: $color_shark;
             font-weight: bolder;
             &:hover {
-                color: $red;
+                color: $light_blue;
             }
         }
         p {
@@ -130,7 +130,7 @@ a {
         color: $color_tuatara;
     }
     &:hover {
-        color: $red;
+        color: $light_blue;
     }
     &:active {
         transition: color 0.3s;

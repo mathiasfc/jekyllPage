@@ -3,25 +3,31 @@
 	display: inline-block;
 	border: 1px solid;
 	border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
-	border-radius: 3px;
+	border-radius: 5px;
 	text-decoration: none;
-	background: $white;
+	background: $black;
 	color: $color_shark;
 	&:hover {
-		box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
-		color: $red;
+		box-shadow: 0 0 4px 0 rgba($white,0.5);
+		color: $light_blue;
 	}
 }
 .social-btn {
 	padding: 10px;
 	margin: 10px;
-	@extend %btnextend;
+  @extend %btnextend;
+  border: none;
+
+  &:hover{
+    box-shadow: none;
+  }
 }
 .btn {
 	padding: 10px 18px;
 	@include font-rem(14);
 	margin: 4px auto;
-	@extend %btnextend;
+  @extend %btnextend;
+  border-radius: 5px;
 	&.btn-success {
       background-color: $success;
       color: $white;
@@ -205,4 +211,10 @@ kbd {
     text-align: center;
     font-weight: 300;
     margin-bottom: 10px;
+}
+
+.wrapper{
+  .btn{
+    background-color: $white;
+  }
 }
