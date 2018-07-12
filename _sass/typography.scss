@@ -45,18 +45,23 @@ h3.title a {
         padding-left: 0;
     }
     li {
+        cursor: pointer;
         padding: 10px 18px;
         margin: 0 10px;
         text-decoration: none;
-        background: $white;
-        color: $color_shark;
-        -webkit-box-shadow: 0px 0px 15px -3px rgba(189, 189, 189, 1);
-        -moz-box-shadow: 0px 0px 15px -3px rgba(189, 189, 189, 1);
-        box-shadow: 0px 0px 15px -3px rgba(189, 189, 189, 1);
+        /*background: $white;*/
+        background: #101010;
+        /*color: $color_shark;*/
+        color: #d8d8d8;
+        -webkit-box-shadow: 0px 0px 15px -3px #000000;
+        -moz-box-shadow: 0px 0px 15px -3px #000000;
+        box-shadow: 0px 0px 15px -3px #000000;
+        transition: all 200ms ease-in;
         a {
             @include font-rem(20);
             text-decoration: none;
-            color: $color_shark;
+            /*color: $color_shark;*/
+            color: $white;
             font-weight: bolder;
             &:hover {
                 color: $light_blue;
@@ -66,12 +71,20 @@ h3.title a {
             font-weight: lighter;
             @include font-rem(16);
         }
+
+        &:hover {
+            transform: scale(0.997);
+            -webkit-box-shadow: 0px 0px 0px 0px #07283b;
+            -moz-box-shadow: 0px 0px 0px 0px #07283b;
+            box-shadow: 0px 0px 0px 0px #07283b;
+        }
     }
 
     .tag-list {
         .simple-tag {
             color: #39739d;
-            background-color: #e1ecf4;
+            /*background-color: #e1ecf4;*/
+            background: $black;
             border-color: transparent;
             position: relative;
             display: inline-block;
@@ -91,9 +104,9 @@ h3.title a {
 
         .simple-tag:hover {
             color: #2c5f87;
-            background-color: #cee0ed;
+            background-color: #101010;
             border-color: rgba(0, 0, 0, 0);
-            font-weight: bold !important;
+            /*font-weight: bold !important;*/
         }
     }
 }
@@ -124,13 +137,13 @@ a {
     transition: color 0.4s;
     color: $color_shark;
     &:link {
-        color: $color_shark;
+        color: #f1f1f1;
     }
     &:visited {
-        color: $color_tuatara;
+        color: #f1f1f1;
     }
     &:hover {
-        color: $light_blue;
+        color: #f1f1f1;
     }
     &:active {
         transition: color 0.3s;
@@ -149,7 +162,8 @@ li code,
 p pre,
 li pre {
     @include font(14);
-    background-color: $color_gray;
+    /*background-color: $color_gray;*/
+    background-color: #49483e;
     border: 1px solid $color_mischka;
     @include rounded(4px);
     margin: 0 2px;
@@ -172,7 +186,8 @@ table {
     padding: 0.5em 1em;
     text-indent: 0;
     @include font-rem(14);
-    background-color: $color_gray;
+    /*background-color: $color_gray;*/
+    background-color: #113d4c;
     border: 1px solid $color_pink_swan;
     @include rounded(3px);
 }

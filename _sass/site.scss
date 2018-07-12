@@ -20,7 +20,7 @@ body {
     background-attachment: fixed;
     @media #{$small} {
         background-image: none !important;
-        background: $white;
+        /*background: $white;*/
     }
 }
 * {
@@ -103,11 +103,13 @@ body {
     width: 75%;
     max-width: 850px;
     margin: 4rem auto;
-    background: $white;
-    color: $color_tuatara;
+    /*background: $white;*/
+    background: none;
+    /*color: $color_tuatara;*/
+    color: $white;
     padding: 2em;
     border-radius: 3px;
-    box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);
+    /*box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);*/
     @include transition(0.5s);
     @media #{$small} {
         width: 90%;
@@ -115,6 +117,26 @@ body {
         box-shadow: none;
     }
 }
+
+.wrapper-post {
+    width: 75%;
+    max-width: 850px;
+    margin: 4rem auto;
+    /*background: $white;*/
+    background: $black;
+    /*color: $color_tuatara;*/
+    color: $white;
+    padding: 2em;
+    border-radius: 3px;
+    /*box-shadow: 0 0 10px 0 rgba($color_shark, 0.3);*/
+    @include transition(0.5s);
+    @media #{$small} {
+        width: 90%;
+        padding: 2em 0;
+        box-shadow: none;
+    }
+}
+
 #disqus_thread {
     width: 75%;
     max-width: 850px;
