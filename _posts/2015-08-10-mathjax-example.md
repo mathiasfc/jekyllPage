@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MathJax Example"
+title:  "Post"
 date:   2015-08-10
 excerpt: "MathJax Example for Moon Jekyll Theme."
 tags: [sample post, code, highlighting]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Testing Readability with a Bunch of Text"
+title: "Post"
 date: 2012-05-22
 excerpt: "A ton Sof text to test readability."
 tags: [sample post, readability, test]
