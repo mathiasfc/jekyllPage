@@ -19,7 +19,8 @@
 	button {
 		top: 0;
 		left: 0;
-		background: $comp-color;
+		/*background: $comp-color;*/
+		background: transparent;
 		border: none;
 		width: 48px;
 		height: 45px;
@@ -34,7 +35,10 @@
 			@include border-radius(3px,3px,3px,3px);
 		}
 	}
-	button:hover,
+	/*button:hover{
+		
+	}*/
+
 	button.dl-active,
 	ul {
 		background: #aaa;
@@ -357,7 +361,7 @@ All this is done for any sub-level being entered.
 	}
 }
 // Menu Color
-.dl-menuwrapper button:hover,
+/*.dl-menuwrapper button:hover,*/
 .dl-menuwrapper button.dl-active,
 .dl-menuwrapper ul {
 	background: $comp-color;

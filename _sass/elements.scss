@@ -233,7 +233,7 @@ kbd {
         .title {
             p.contact-title {
                 font-size: 1.2rem;
-                font-weight: 300;
+                font-weight: 500;
                 color: white;
                 user-select: none;
             }
@@ -261,8 +261,9 @@ kbd {
             display: block;
             margin-top: 3%;
             width: 100%;
-            height: 20%;
+            height: 150px;
             text-indent: 5px;
+            resize: none;
         }
 
         .enviar {
@@ -313,5 +314,34 @@ kbd {
         border: 5px solid #06344c;
         margin-left: 28%;
         background-color: #f3f3f3;
+    }
+}
+
+.main-footer {
+    bottom: 0px;
+    height: 20px;
+    color: #216b84;
+    font-size: 11px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3em;
+
+    .build-with {
+        a {
+            transition: color 0.4s;
+            color: #216b84;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            &:hover {
+                color: #60caff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .main-footer {
+        display: none;
     }
 }
