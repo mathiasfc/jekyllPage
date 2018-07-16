@@ -1,0 +1,43 @@
+--- 
+layout: compress 
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header flex" role="banner">
+        <div class="container animated fadeIn contact">
+            <div class="row">
+                <h3 class="title">
+                    <p class="contact-title">Contato</p>
+                    <a class="btn zoombtn" style="padding: 13px 16px; background: #252525;" href="{{site.url}}">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </h3>
+
+                <form action="https://formspree.io/mathias.falci@gmail.com" method="POST">
+                    <input class="name" type="text" name="name" placeholder="Nome">
+                    <input class="email" type="email" name="email" placeholder="E-mail">
+                    <textarea class="msg" name="message" placeholder="Sua mensagem =)"></textarea>
+                    <input type="hidden" name="_next" value="//localhost:4000/thanks" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input class="enviar" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </header>
+    {% include scripts.html %}
+</body>
+
+</html>
