@@ -2,7 +2,7 @@
 layout: post
 title: "Animação POV-Ray"
 date: 2016-09-14
-excerpt: "Animação feita no programa POV-Ray."
+excerpt: "Animação feita no programa POV-Ray"
 tags: [c#, computação gráfica, graduação]
 comments: true
 ---

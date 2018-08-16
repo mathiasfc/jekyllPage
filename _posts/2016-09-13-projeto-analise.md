@@ -2,7 +2,7 @@
 layout: post
 title: "Projeto de Análise"
 date: 2016-09-13
-excerpt: "Este projeto visa analisar pelo menos 4 vídeos, onde pessoas se movimentam livremente, o resultado da análise aponta áreas mais movimentadas, formação de grupos e outros comportamentos."
+excerpt: "Este projeto visa analisar pelo menos 4 vídeos, onde pessoas se movimentam livremente, o resultado da análise aponta áreas mais movimentadas, formação de grupos e outros comportamentos"
 tags: [c#, computação gráfica, graduação]
 comments: true
 ---
