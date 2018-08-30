@@ -63,4 +63,8 @@ $(document).ready(function() {
         mainClass: 'mfp-fade'
     });
 
+    //Hr grow animation
+    setTimeout(function() {
+        $('.hr-line').addClass('grow');
+    }, 275);
 });

@@ -104,10 +104,16 @@ hr {
         height: 1px;
         opacity: 0.15;
         margin: 1em 0;
+        transition: width 2s ease-out;
+        width: 0%;
         background-image: -webkit-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
         background-image: -moz-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
         background-image: -ms-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
         background-image: -o-linear-gradient(left, $color_gallery, $color_stack, $color_gallery);
+
+        &.grow {
+            width: 100%;
+        }
     }
 }
 
@@ -343,5 +349,14 @@ kbd {
 @media only screen and (max-width: 1100px) {
     .main-footer {
         display: none;
+    }
+}
+
+/*Mobile Phone*/
+@media only screen and (max-width: 500px) {
+    .social-links {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 10px;
     }
 }
