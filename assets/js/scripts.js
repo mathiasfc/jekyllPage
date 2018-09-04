@@ -67,4 +67,10 @@ $(document).ready(function() {
     setTimeout(function() {
         $('.hr-line').addClass('grow');
     }, 275);
+
+    //Fix wow animation
+    setTimeout(function(){
+        //alert("show wow");
+        //$('.wow').show();
+    },500);
 });

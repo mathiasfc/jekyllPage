@@ -360,3 +360,8 @@ kbd {
         grid-gap: 10px;
     }
 }
+
+/*Fix wow bug*/
+.wow {
+    visibility: hidden;
+}
