@@ -184,8 +184,8 @@ body {
 			box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
 		}*/
         border: 1px solid;
-        color: #39739d;
-        background-color: #e1ecf4;
+        color: white;
+        background-color: #1b1b1b;
         border-color: transparent;
         position: relative;
         display: inline-block;
@@ -208,9 +208,10 @@ body {
         }
 
         &:hover {
-            color: #2c5f87;
-            background-color: #cee0ed;
+            color: white;
+            background-color: black;
             border-color: rgba(0, 0, 0, 0);
+            border: 1px solid white;
         }
     }
 }
