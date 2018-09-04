@@ -68,9 +68,10 @@ $(document).ready(function() {
         $('.hr-line').addClass('grow');
     }, 275);
 
-    //Fix wow animation
-    setTimeout(function(){
-        //alert("show wow");
-        //$('.wow').show();
-    },500);
+    var maxLength = 200;
+    $('#textarea_email').keyup(function() {
+        var length = $(this).val().length;
+        var length = maxLength - length;
+        $('.countdown').text(length + ' left');
+    });
 });
