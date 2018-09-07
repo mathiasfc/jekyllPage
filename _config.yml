@@ -11,7 +11,6 @@ background:         ''
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             pt_BR
 url:                https://mathiasfc.github.io/jekyllPage/
-
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
@@ -76,7 +75,8 @@ jekyll-mentions:
     base_url: https://github.com
 
 # Server Config options
-livereload: true     # You no longer need to include --livereload
+livereload: 12345
+port:      12345
 
 webrick:
   headers:

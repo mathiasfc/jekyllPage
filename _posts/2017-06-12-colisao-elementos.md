@@ -7,7 +7,7 @@ tags: [javascript, jquery, html]
 comments: true
 ---
 
-Para mostrar como funciona a detecção de colisão entre dois objetos em <b>javascript</b> utilizando <b>jquery</b>, vou utilizar duas div's quadradas inseridas em um plano <b>2D</b> (x,y), lembrando que  a detecção de colisão pode ser aplicada para qualquer forma de objeto, desde que tenhamos as dimensões dos objetos em questão e suas respectivas posições. Esse algoritmo serve também para planos em 3D (x,y,z), obviamente que a complexidade da detecção aumentará, mas o raciocínio permanece o mesmo.
+Para apresentar como funciona a detecção de colisão entre dois objetos em <b>javascript</b> utilizando <b>jquery</b>, vou utilizar duas div's quadradas inseridas em um plano <b>2D</b> (x,y), lembrando que  a detecção de colisão pode ser aplicada para qualquer forma de objeto, desde que tenhamos as dimensões dos objetos em questão e suas respectivas posições. Esse algoritmo serve também para planos em 3D (x,y,z), obviamente que a complexidade da detecção aumentará, mas o raciocínio permanece o mesmo.
 
 <figure>
 	<img src="../assets/img/posts/img10.png">

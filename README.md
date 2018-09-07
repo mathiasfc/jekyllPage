@@ -18,3 +18,5 @@ Gem 2.6.14.1
 Jekyll 3.8.1
 
 Ruby 2.4.4p296 (2018-03-28 revision 63013) [x64-mingw32]
+
+*ubuntu liveReload tip: bundle exec jekyll serve --livereload --livereload_port 8888 [rand]
