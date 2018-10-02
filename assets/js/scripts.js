@@ -63,15 +63,33 @@ $(document).ready(function() {
         mainClass: 'mfp-fade'
     });
 
-    //Hr grow animation
-    setTimeout(function() {
-        $('.hr-line').addClass('grow');
-    }, 275);
+    //Hr grow animation && Spans home animation
+    if (document.location.pathname == '/') {
+        $('.span-home-projects,.span-home-about,.span-home-contact').css('opacity',0);
+        setTimeout(function() {
+            $('.hr-line').addClass('grow');
+        }, 275);
 
-    var maxLength = 200;
-    $('#textarea_email').keyup(function() {
-        var length = $(this).val().length;
-        var length = maxLength - length;
-        $('.countdown').text(length + ' left');
-    });
+        setTimeout(function() {
+            $('.span-home-projects').animate({opacity: 1}, 1000);
+        }, 400);
+
+        setTimeout(function() {
+            $('.span-home-about').animate({opacity: 1}, 1000);
+        }, 800);
+
+        setTimeout(function() {
+            $('.span-home-contact').animate({opacity: 1}, 1000);
+        }, 1200);
+    }
+
+    //Countdown char length contact form
+    if (document.location.pathname == '/contact/') {
+        var maxLength = 200;
+        $('#textarea_email').keyup(function() {
+            var length = $(this).val().length;
+            var length = maxLength - length;
+            $('.countdown').text(length + ' left');
+        });
+    }
 });
