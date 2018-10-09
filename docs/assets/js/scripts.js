@@ -64,27 +64,27 @@ $(document).ready(function() {
     });
 
     //Hr grow animation && Spans home animation
-    if (document.location.pathname == '/') {
-        $('.span-home-projects,.span-home-about,.span-home-contact').css('opacity',0);
+    if (document.location.pathname == '/' || document.location.pathname == '/jekyllPage/') {
+        $('.span-home-projects,.span-home-about,.span-home-contact').css('opacity', 0);
         setTimeout(function() {
             $('.hr-line').addClass('grow');
         }, 275);
 
         setTimeout(function() {
-            $('.span-home-projects').animate({opacity: 1}, 1000);
+            $('.span-home-projects').animate({ opacity: 1 }, 1000);
         }, 400);
 
         setTimeout(function() {
-            $('.span-home-about').animate({opacity: 1}, 1000);
+            $('.span-home-about').animate({ opacity: 1 }, 1000);
         }, 800);
 
         setTimeout(function() {
-            $('.span-home-contact').animate({opacity: 1}, 1000);
+            $('.span-home-contact').animate({ opacity: 1 }, 1000);
         }, 1200);
     }
 
     //Countdown char length contact form
-    if (document.location.pathname == '/contact/') {
+    if (document.location.pathname == '/contact/' || document.location.pathname == '/jekyllPage/contact/') {
         var maxLength = 200;
         $('#textarea_email').keyup(function() {
             var length = $(this).val().length;
