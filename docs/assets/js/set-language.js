@@ -20,7 +20,7 @@ function setLanguage(lang) {
     nav.find('.span-nav-all-tags').text(language.nav.todasTags);
     nav.find('.dl-back a').text(language.nav.voltar);
 
-    if (document.location.pathname == '/') {
+    if (document.location.pathname == '/' || document.location.pathname == '/jekyllPage/') {
         $('.span-home-projects').text(language.home.projetos);
         $('.span-home-about').text(language.home.sobre);
         $('.span-home-contact').text(language.home.contato);
