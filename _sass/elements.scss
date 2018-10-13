@@ -251,7 +251,10 @@ kbd {
 
     form {
         width: 100%;
-        padding: 2% 5% 2% 5%;
+        max-width: 450px;
+        text-align: center;
+        margin: 0 auto;
+        /* padding: 2% 5% 2% 5%; */
 
         .name {
             width: 100%;

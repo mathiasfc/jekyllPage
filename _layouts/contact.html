@@ -17,14 +17,14 @@ layout: compress
     {% include nav.html %}
     <!-- Header -->
     <header class="header flex" role="banner">
-        <div class="container animated fadeIn contact">
+        <div class="wrapper-post animated fadeIn contact">
             <div class="row">
-                <h3 class="title">
-                    <p class="contact-title">{{ page.title }}</p>
-                    <a class="btn zoombtn" style="padding: 13px 16px; background: #252525;" href="{{site.url}}">
+                <div class="post-title">
+                    <h1 class="contact-title">{{ page.title }}</h1>
+                    <a class="btn zoombtn" style="padding: 13px 16px; background: #252525; margin-top: 10px;" href="{{site.url}}">
                         <i class="fa fa-home"></i>
                     </a>
-                </h3>
+                </div>
 
                 <form action="https://formspree.io/mathias.falci@gmail.com" method="POST">
                     <input class="name" type="text" name="name" placeholder="Nome" maxlength="40">
